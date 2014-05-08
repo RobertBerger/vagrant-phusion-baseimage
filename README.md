@@ -37,6 +37,12 @@ Windoze:
 
 wait
 
+*) make sure vagrant is able to download a box
+
+         VAGRANT_LOG=debug vagrant box add --clean hashicorp/precise64  --provider virtualbox --insecure
+
+Only if this works go ahead!        
+
 *) clone the vagrant file(s) and helper scripts
 
          git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git

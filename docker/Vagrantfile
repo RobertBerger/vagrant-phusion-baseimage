@@ -10,10 +10,10 @@ Vagrant.configure("2") do |config|
  config.vm.box = "hashicorp/precise64"
 
  # but this does not seem to work on a 32-bit Windoze 
- if ENV["PROCESSOR_ARCHITECTURE"] == "x86"
-   puts "falling back to 32-bit guest architecture"
-   config.vm.box = "hashicorp/precise32"
- end
+ #if ENV["PROCESSOR_ARCHITECTURE"] == "x86"
+ #  puts "falling back to 32-bit guest architecture"
+ #  config.vm.box = "hashicorp/precise32"
+ #end
 
  # common stuff (32 and 64 bit)
  config.vm.provision "docker"
