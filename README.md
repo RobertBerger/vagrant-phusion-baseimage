@@ -41,7 +41,7 @@ Windoze:
 
 *) get into your newly cloned git repo
 
-         cd ~/vagrant-physion-baseimage
+         cd ~/vagrant-phusion-baseimage
 
 *) create VM and docker stuff with vagrant
 
