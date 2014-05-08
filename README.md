@@ -20,6 +20,12 @@ In Unix/Linux it would be something like:
 
          export PATH=$PATH:"/cygdrive/e/Program Files/Oracle/VirtualBox/"
 
+In Windoze do whatever you have to do and - restart...
+
+*) I guess (since it's Windoze) you rebooted already a couple of times until here. If not it's now a good time to reboot!
+
+Check that we vagrant and virtualbox are on the system path, if not, fix it now!
+
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
        Git packages from the “Devel” category:
@@ -30,9 +36,11 @@ In Unix/Linux it would be something like:
          gitk
 
          bsdtar
-         bstcpio
+         bsdcpio
 
-*) In order not to spend hours searching (like me) check bsdtar and bstcpio which come with Vagrant:
+*) In order not to spend hours searching (like me) make sure bsdtar and bstcpio which come with vagrant are operational:
+(it seems to be quite usual for bsdtar not to work - https://github.com/mitchellh/vagrant/issues/3724)
+
 
 make sure that <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
@@ -42,7 +50,7 @@ make sure that <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuw
 
 are working. Just execute them on a DOS shell to check.
 
-If they don't work find a replacement, like from Cygwin (see below) and copy them over to <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
+If they don't work find a replacement, like from Cygwin (see above) and copy them over to <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
 e.g. in a Cywgin shell:
 
