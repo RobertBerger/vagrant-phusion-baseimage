@@ -6,6 +6,8 @@ vagrant docker provider demo
 Windoze:
 =======
 
+*) install VirtualBox: https://www.virtualbox.org/wiki/Downloads
+
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
        Git packages from the “Devel” category:
