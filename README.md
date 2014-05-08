@@ -15,12 +15,20 @@ Windoze:
          git-gui
          gitk
 
-*) cd ~
+*) get into your home directory
 
-*) git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
+  cd ~
 
-*) cd ~/vagrant-physion-baseimage
+*) clone the vagrant file(s) and helper scripts
 
-*) ./01_up.sh
+  git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
+
+*) get into your newly cloned git repo
+
+  cd ~/vagrant-physion-baseimage
+
+*) create VM and docker stuff with vagrant
+
+  ./01_up.sh
 
 
