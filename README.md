@@ -12,6 +12,8 @@ Windoze:
 
          click yes to the complaints you get that this software packages are not signed
 
+*) I guess (since it's Windoze) you rebooted already here if not it's now a good time to reboot, so the environment for the Virtualbox is set up properly.
+
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
        Git packages from the “Devel” category:
