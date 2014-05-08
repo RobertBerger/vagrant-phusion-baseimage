@@ -17,18 +17,18 @@ Windoze:
 
 *) get into your home directory
 
-  cd ~
+         cd ~
 
 *) clone the vagrant file(s) and helper scripts
 
-  git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
+         git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
 
 *) get into your newly cloned git repo
 
-  cd ~/vagrant-physion-baseimage
+         cd ~/vagrant-physion-baseimage
 
 *) create VM and docker stuff with vagrant
 
-  ./01_up.sh
+         ./01_up.sh
 
 
