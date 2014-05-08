@@ -23,6 +23,27 @@ Windoze:
          git-gui
          gitk
 
+         bsdtar
+         bstcpio
+
+*) In order not to spend hours searching (like me) check bsdtar and bstcpio which come with Vagrant:
+
+make sure that <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
+
+        bsdtar.exe
+        
+        bsdcpio.exe
+
+are working. Just execute them on a DOS shell to check.
+
+If they don't work find a replacement, like from Cygwin (see below) and copy them over to <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
+
+e.g. in a Cywgin shell:
+
+        cp /usr/bin/bsdcpio.exe .
+
+        cp /usr/bin/bsdtar.exe .
+
 *) Open a Cygwin shell - we don't want no stinkin DOS prompt :)
 
 *) get into your home directory
