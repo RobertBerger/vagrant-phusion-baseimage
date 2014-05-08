@@ -14,6 +14,12 @@ Windoze:
 
 *) I guess (since it's Windoze) you rebooted already here if not it's now a good time to reboot, so the environment for the Virtualbox is set up properly.
 
+*) Make sure to put the folder where Virtualbox was installed on the System Path!
+
+In Unix/Linux it would be something like:
+
+         export PATH=$PATH:"/cygdrive/e/Program Files/Oracle/VirtualBox/"
+
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
        Git packages from the “Devel” category:
