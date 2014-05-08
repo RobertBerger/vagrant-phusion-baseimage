@@ -33,7 +33,7 @@ Windoze:
 
          2) virtualbox <--- choose this
 
-         wait
+wait
 
 *) clone the vagrant file(s) and helper scripts
 
