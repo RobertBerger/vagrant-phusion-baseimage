@@ -8,6 +8,8 @@ Windoze:
 
 *) install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
+         click yes to the complaints you get that this software packeges are not signed
+
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
        Git packages from the “Devel” category:
