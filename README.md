@@ -6,6 +6,8 @@ vagrant docker provider demo
 Windoze:
 =======
 
+*) install vagrant 1.6+: http://www.vagrantup.com/downloads.html
+
 *) install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
          click yes to the complaints you get that this software packeges are not signed
@@ -19,9 +21,19 @@ Windoze:
          git-gui
          gitk
 
+*) Open a Cygwin shell - we don't want no stinkin DOS prompt :)
+
 *) get into your home directory
 
          cd ~
+
+*) add a box
+
+         vagrant box add hashicorp/precise64
+
+         2) virtualbox <--- choose this
+
+         wait
 
 *) clone the vagrant file(s) and helper scripts
 
