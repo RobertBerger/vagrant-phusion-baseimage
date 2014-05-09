@@ -6,6 +6,7 @@ vagrant docker provider demo
 Linux:
 ======
 *) install docker - avoid version 0.10.0 since it has a problem with /dev/shm - I currently use v0.10.1
+
 That's what I did on Ubuntu 12.04:
 
         sudo sh -c "echo deb https://test.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
