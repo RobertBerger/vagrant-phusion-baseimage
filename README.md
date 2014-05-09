@@ -39,14 +39,14 @@ You might need to create a ~/.gitconfig for this to work
 
 	 ./02_ssh.sh
 
-If you really really want it on Windoze keep on reading. It is much easier wipe you Windows and install Ubuntu.
+If you really really want it on Windoze keep on reading. It would be much easier to wipe your Windows and install Ubuntu.
 
 Windows is a pain in the ass!
 
 ... I warned you ...
 
-Windoze:
-=======
+Windoze: (tested on XP)
+=======================
 
 *) install putty: http://www.putty.org/
 
