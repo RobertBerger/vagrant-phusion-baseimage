@@ -40,7 +40,7 @@ You might need to create a ~/.gitconfig for this to work
 
 *) ssh to it:
 
-	 ./02_ssh.sh
+         ./02_ssh.sh
 
 If you really really want it on Windoze keep on reading. It would be much easier to wipe your Windows and install Ubuntu.
 
@@ -149,5 +149,5 @@ You might need to create a ~/.gitconfig for this to work
 
 *) ssh to it
 
-	 ./02_ssh.sh
+         ./02_ssh.sh
 
