@@ -93,7 +93,7 @@ http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh
 
 *) use putty to ssh to your newly created ssh server
 
-To avoid funnt problems I recommend to access the ssh server/cygwin through putty from now on!
+To avoid funny problems I recommend to access the ssh server/cygwin through putty from now on!
 
 *) In order not to spend hours searching (like me) make sure bsdtar and bstcpio which come with vagrant are operational:
 (it seems to be quite usual for bsdtar not to work - https://github.com/mitchellh/vagrant/issues/3724)
