@@ -67,7 +67,7 @@ In Windoze do whatever you have to do and - restart...
 
 *) I guess (since it's Windoze) you rebooted already a couple of times until here. If not it's now a good time to reboot!
 
-Check that we have vagrant and virtualbox are on the system path, if not, fix it now!
+Check that we have vagrant and virtualbox on the system path, if not, fix it now!
 
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
