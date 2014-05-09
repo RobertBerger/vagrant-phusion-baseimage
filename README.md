@@ -1,4 +1,4 @@
-vagrant-phusion-baseimage
+oosvagrant-phusion-baseimage
 =========================
 
 vagrant docker provider demo
@@ -69,7 +69,7 @@ In Windoze do whatever you have to do and - restart...
 
 Check that we have vagrant and virtualbox on the system path, if not, fix it now!
 
-*) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
+*) install Cygwin: http://www.cygwin.com/install.html and make sure you choose: 
 
        Git packages from the “Devel” category:
 
@@ -78,8 +78,12 @@ Check that we have vagrant and virtualbox on the system path, if not, fix it now
          git-gui
          gitk
 
+       bsd stuff:
+
          bsdtar
          bsdcpio
+
+       ssh server:
 
          openssh   
          openssl 
