@@ -3,16 +3,58 @@ vagrant-phusion-baseimage
 
 vagrant docker provider demo
 
+Linux:
+======
+*) install docker - avoid version 0.10.0 since it has a problem with /dev/shm - I currently use v0.10.1
+That's what I did on Ubuntu 12.04:
+
+        sudo sh -c "echo deb https://test.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+        sudo sh -c "wget -qO- https://test.docker.io/gpg | apt-key add -"
+        sudo apt-get update
+        sudo apt-get install -y lxc-docker
+
+add your user to the docker group:
+
+        sudo adduser ${USER} docker
+
+*) install vagrant 1.6+: http://www.vagrantup.com/downloads.html
+
+*) clone the vagrant file(s) and helper scripts
+
+You might need to create a ~/.gitconfig for this to work
+
+         cd ~
+         git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
+
+*) get into your newly cloned git repo
+
+         cd ~/vagrant-phusion-baseimage
+
+*) create docker stuff with vagrant:
+
+         ./01_up.sh
+
+*) ssh to it:
+
+	 ./02_ssh.sh
+
+If you really really want it on Windoze keep on reading. It is much easier wipe you Windows and install Ubuntu.
+
+Windows is a pain in the ass!
+
+... I warned you ...
+
 Windoze:
 =======
+
+*) install putty: http://www.putty.org/
 
 *) install vagrant 1.6+: http://www.vagrantup.com/downloads.html
 
 *) install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
          click yes to the complaints you get that this software packages are not signed
-
-*) I guess (since it's Windoze) you rebooted already here if not it's now a good time to reboot, so the environment for the Virtualbox is set up properly.
 
 *) Make sure to put the folder where Virtualbox was installed on the System Path!
 
@@ -38,9 +80,17 @@ Check that we vagrant and virtualbox are on the system path, if not, fix it now!
          bsdtar
          bsdcpio
 
+         openssh   
+         openssl 
+
+install/configure/start the ssh server: http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm
+
+*) use putty to ssh to your newly created ssh server
+
+To avoid funnt problems I recommend to access the ssh server/cygwin through putty from now on!
+
 *) In order not to spend hours searching (like me) make sure bsdtar and bstcpio which come with vagrant are operational:
 (it seems to be quite usual for bsdtar not to work - https://github.com/mitchellh/vagrant/issues/3724)
-
 
 make sure that <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
@@ -52,19 +102,17 @@ are working. Just execute them on a DOS shell to check.
 
 If they don't work find a replacement, like from Cygwin (see above) and copy them over to <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
-e.g. in a Cywgin shell:
+e.g. in a Cywgin shell from <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
-        cp /usr/bin/bsdcpio.exe .
+        cp /usr/bin/bsdcpio.exe ..
 
         cp /usr/bin/bsdtar.exe .
 
-*) Open a Cygwin shell - we don't want no stinkin DOS prompt :)
-
-*) get into your home directory
+*) get into your home directory (through putty/cygwin)
 
          cd ~
 
-*) add a box
+*) add a box 
 
          vagrant box add hashicorp/precise64
 
@@ -76,10 +124,15 @@ wait
 
          VAGRANT_LOG=debug vagrant box add --clean hashicorp/precise64  --provider virtualbox --insecure
 
-Only if this works go ahead!        
+If this does not work check bsdtar.exe!
 
-*) clone the vagrant file(s) and helper scripts
+Only if this works go ahead!!!      
 
+*) clone the vagrant file(s) and helper scripts - remember all through putty on the cygwin ssh server
+
+You might need to create a ~/.gitconfig for this to work
+
+         cd ~
          git clone https://github.com/RobertBerger/vagrant-phusion-baseimage.git
 
 *) get into your newly cloned git repo
@@ -90,4 +143,6 @@ Only if this works go ahead!
 
          ./01_up.sh
 
+*) ssh to it
 
+	 ./02_ssh.sh
