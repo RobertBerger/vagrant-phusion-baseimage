@@ -67,7 +67,7 @@ In Windoze do whatever you have to do and - restart...
 
 *) I guess (since it's Windoze) you rebooted already a couple of times until here. If not it's now a good time to reboot!
 
-Check that we vagrant and virtualbox are on the system path, if not, fix it now!
+Check that we have vagrant and virtualbox are on the system path, if not, fix it now!
 
 *) install Cygwin: http://www.cygwin.com/install.html and make sure you choose git: 
 
@@ -84,7 +84,8 @@ Check that we vagrant and virtualbox are on the system path, if not, fix it now!
          openssh   
          openssl 
 
-install/configure/start the ssh server: http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm
+install/configure/start the ssh server: 
+http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm
 
 *) use putty to ssh to your newly created ssh server
 
