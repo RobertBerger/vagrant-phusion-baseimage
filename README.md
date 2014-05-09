@@ -110,7 +110,7 @@ If they don't work find a replacement, like from Cygwin (see above) and copy the
 
 e.g. in a Cywgin shell from <Whereever you installed vagrant>/HashiCorp/Vagrant/embedded/gnuwin32/bin:
 
-        cp /usr/bin/bsdcpio.exe ..
+        cp /usr/bin/bsdcpio.exe .
 
         cp /usr/bin/bsdtar.exe .
 
@@ -118,17 +118,13 @@ e.g. in a Cywgin shell from <Whereever you installed vagrant>/HashiCorp/Vagrant/
 
          cd ~
 
-*) add a box 
-
-         vagrant box add hashicorp/precise64
-
-         2) virtualbox <--- choose this
-
-wait
-
 *) make sure vagrant is able to download a box
 
          VAGRANT_LOG=debug vagrant box add --clean hashicorp/precise64  --provider virtualbox --insecure
+
+         2) virtualbox <--- choose this
+
+... wait ...
 
 If this does not work check bsdtar.exe!
 
