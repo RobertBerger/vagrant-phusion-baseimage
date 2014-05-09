@@ -3,6 +3,8 @@ oosvagrant-phusion-baseimage
 
 vagrant docker provider demo
 
+Report Linux related problems here: https://github.com/RobertBerger/vagrant-phusion-baseimage/issues 
+
 Linux:
 ======
 *) install docker - avoid version 0.10.0 since it has a problem with /dev/shm - I currently use v0.10.1
@@ -148,3 +150,4 @@ You might need to create a ~/.gitconfig for this to work
 *) ssh to it
 
 	 ./02_ssh.sh
+
